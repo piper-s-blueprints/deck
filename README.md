@@ -10,5 +10,8 @@ The Deck's desktop app is based on the Rust language. To run it, you need to fol
 
 Once you have installed Rust, you need to navigate to the core directory and execute `cargo run`.
 
+#### Rust dependencies
+- [Yaml Rust](https://crates.io/crates/yaml-rust) : for dumping and reading yaml files
+
 ### Firmware
 ...

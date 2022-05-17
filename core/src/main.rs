@@ -1,5 +1,7 @@
 use std::env;
 
+mod actions;
+
 fn main() {
     let args: Vec<String> = env::args().collect();
 
@@ -11,10 +13,11 @@ fn main() {
     };
 }
 
-fn run_socket_mode() {
-    println!("SOCKET MODE");
-}
-
 fn run_console_mode() {
     println!("CONSOLE MODE");
+    actions::action_list::create_action_list_file(String::from("test.yaml"));
+}
+
+fn run_socket_mode() {
+    println!("SOCKET MODE");
 }
