@@ -15,7 +15,7 @@ fn main() {
 
 fn run_console_mode() {
     println!("CONSOLE MODE");
-    actions::action_list::create_action_list_file(String::from("test.yaml"));
+    println!("{}", actions::get_action_list(String::from("profile.yaml")));
 }
 
 fn run_socket_mode() {
